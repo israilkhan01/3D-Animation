@@ -1,0 +1,80 @@
+body{
+   
+    height: 100%;
+    width: 100%;
+  background: black;
+
+}
+.cube{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transform-style: preserve-3d; 
+    transform: rotate3d(1, 1, 1, 45deg); ;
+    top: 40%;
+    left: 45%;
+    perspective: 8000px;
+    animation: mo 10s ease-in-out 2 alternate;
+    transition: all 2s;
+}
+
+@keyframes mo{
+   
+    from{
+
+    }
+    25%{
+        transform: translateX(150px) rotate(90deg);
+        height: 100px;
+        width: 100px;
+    }
+    50%{
+        transform: rotateX(90deg) rotateY(290deg) translateY(150px);
+    }
+    to{
+        transition: all 5s;
+        transform:  rotateZ(-300deg) translateX(120px)  translateZ(-120px) scale3d(2,2,2);
+        height: 50px;
+        width: 50px;
+       
+    }
+}
+.face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.7;
+    
+}
+
+
+.one{
+    background-color: darkslategray;
+    opacity: 0.8;
+
+}
+.two{
+    background-color:green;
+    transform: rotateY(90deg) translateX(75px) translateZ(75px);
+    opacity: 0.8;
+}
+.three{
+    background-color: white;
+    transform: rotateX(90deg) translateZ(75px) translateY(-75px);
+    opacity: 0.8;
+}
+.four{
+    background-color:lightblue;
+    transform: translateZ(-150px) ;
+    opacity: 0.8;
+}
+.five{
+    background-color:royalblue;
+    transform:  rotateX(90deg) translateY(-75px) translateZ(-75px);
+    opacity: 0.8;
+}
+.six{
+    background-color:chocolate;
+    transform: rotateY(90deg) translateX(75px) translateZ(-75px);
+    opacity: 0.8;
+}
