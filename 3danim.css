@@ -14,7 +14,7 @@ body{
     top: 40%;
     left: 45%;
     perspective: 8000px;
-    animation: mo 10s ease-in-out 2 alternate;
+    animation: mo 10s ease-in-out infinite alternate;
     transition: all 2s;
 }
 
